@@ -32,4 +32,5 @@ def get_weather(messege):
                                             f"Temperature minimum: {temperature_minimal}\nTemperature max: {temperature_max}\nWind speed: {wind_speed}")
     else:
         bot.send_message(messege.chat.id, "City not found")
+bot.remove_webhook()
 bot.polling(none_stop = True)
