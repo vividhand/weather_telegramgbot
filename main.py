@@ -33,4 +33,4 @@ def get_weather(messege):
     else:
         bot.send_message(messege.chat.id, "City not found")
 bot.remove_webhook()
-bot.polling(none_stop = True)
+bot.infinity_polling(none_stop=True)
